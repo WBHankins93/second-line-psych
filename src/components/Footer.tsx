@@ -9,9 +9,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-serif font-bold text-white mb-4">
-              Second Line Psychiatry
-            </h3>
+            <div className="flex items-baseline space-x-2">
+                {/* "Second Line" in thin, sleek sans-serif */}
+                <span className="text-2xl font-sans font-light tracking-wide text-white-900">
+                  Second Line
+                </span>
+                {/* "Psychiatry" in larger Eutemia font */}
+                <span className="text-3xl font-eutemia text-maroon-700">
+                  Psychiatry
+                </span>
+              </div>
             <p className="text-sm mb-4">
               Compassionate mental health care rooted in resilience and community
             </p>
