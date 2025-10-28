@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Eutemia';
+  src: url('/fonts/Eutemia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --color-primary: 168 40 77; /* Maroon-700 */
   --color-secondary: 202 138 4; /* Gold-600 */

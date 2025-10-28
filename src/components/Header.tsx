@@ -20,10 +20,12 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex flex-col">
               <div className="flex items-baseline space-x-2">
-                <span className="text-2xl font-sans font-semibold text-stone-900">
+                {/* "Second Line" in thin, sleek sans-serif */}
+                <span className="text-2xl font-sans font-light tracking-wide text-stone-900">
                   Second Line
                 </span>
-                <span className="text-2xl font-serif font-bold text-maroon-700 italic">
+                {/* "Psychiatry" in larger Eutemia font */}
+                <span className="text-3xl font-eutemia text-maroon-700">
                   Psychiatry
                 </span>
               </div>

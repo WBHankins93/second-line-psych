@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-50 to-white py-16">
+      <section className="bg-gradient-to-br from-gold-50 to-white py-16">
         <div className="section-container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-stone-800 mb-4">
@@ -37,7 +37,7 @@ export default function AboutPage() {
                 </div>
                 
                 {/* Quick Facts */}
-                <div className="bg-teal-50 p-6 rounded-lg">
+                <div className="bg-gold-50 p-6 rounded-lg border border-gold-200">
                   <h3 className="font-semibold text-stone-800 mb-3">Credentials</h3>
                   <ul className="space-y-2 text-sm text-stone-700">
                     <li>• Board-Certified PMHNP</li>
@@ -56,7 +56,7 @@ export default function AboutPage() {
                   </h2>
                   <p>
                     Are you looking for a provider who truly understands the highs, lows, and in-betweens 
-                    of life? At Second Line Psychiatry, we offer support grounded in compassion and cultural 
+                    of life? At Second Line <span className="font-serif italic">Psychiatry</span>, we offer support grounded in compassion and cultural 
                     awareness. Inspired by New Orleans' second line tradition (a symbol of movement, healing, 
                     and resilience), our practice walks with you through both celebration and grief.
                   </p>
@@ -101,7 +101,7 @@ export default function AboutPage() {
                 </h2>
                 
                 <div className="space-y-6">
-                  <div className="border-l-4 border-teal-600 pl-6">
+                  <div className="border-l-4 border-maroon-700 pl-6">
                     <h3 className="text-xl font-semibold text-stone-800 mb-2">
                       Emergency Dept. Psychiatric Consultant
                     </h3>
@@ -116,7 +116,7 @@ export default function AboutPage() {
                     </ul>
                   </div>
 
-                  <div className="border-l-4 border-teal-600 pl-6">
+                  <div className="border-l-4 border-maroon-700 pl-6">
                     <h3 className="text-xl font-semibold text-stone-800 mb-2">
                       Inpatient Psychiatric RN
                     </h3>
@@ -193,14 +193,14 @@ export default function AboutPage() {
             </div>
 
             {/* CTA Section */}
-            <div className="mt-16 bg-gradient-to-br from-teal-600 to-teal-700 rounded-2xl p-8 md:p-12 text-center text-white">
+            <div className="mt-16 bg-gradient-to-br from-maroon-700 to-maroon-900 rounded-2xl p-8 md:p-12 text-center text-white">
               <h2 className="text-3xl font-serif font-bold mb-4">
                 Ready to Begin Your Healing Journey?
               </h2>
-              <p className="text-teal-50 text-lg mb-6">
+              <p className="text-stone-100 text-lg mb-6">
                 Let's walk through this together.
               </p>
-              <a href="/#schedule" className="btn-primary bg-white text-teal-600 hover:bg-teal-50">
+              <a href="/#schedule" className="btn-primary bg-white text-maroon-700 hover:bg-stone-100">
                 Schedule Your Consultation
               </a>
             </div>
