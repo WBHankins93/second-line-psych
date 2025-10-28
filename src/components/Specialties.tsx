@@ -62,7 +62,7 @@ export default function Specialties() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex justify-center mb-4">
-                <div className="p-3 bg-teal-100 text-teal-600 rounded-full">
+                <div className="p-3 bg-gold-100 text-maroon-700 rounded-full">
                   {specialty.icon}
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function Specialties() {
         <div className="text-center">
           <Link 
             href="/services"
-            className="inline-flex items-center text-teal-600 hover:text-teal-700 font-semibold text-lg transition-colors duration-200 group"
+            className="inline-flex items-center text-maroon-700 hover:text-maroon-800 font-semibold text-lg transition-colors duration-200 group"
           >
             View All Services & Treatment Approaches
             <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">

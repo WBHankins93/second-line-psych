@@ -19,10 +19,15 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex flex-col">
-              <span className="text-2xl font-serif font-bold text-teal-600">
-                Second Line Psychiatry
-              </span>
-              <span className="text-xs text-stone-600 tracking-wide">
+              <div className="flex items-baseline space-x-2">
+                <span className="text-2xl font-sans font-semibold text-stone-900">
+                  Second Line
+                </span>
+                <span className="text-2xl font-serif font-bold text-maroon-700 italic">
+                  Psychiatry
+                </span>
+              </div>
+              <span className="text-xs text-stone-600 tracking-wide mt-1">
                 Walk Through Healing Together
               </span>
             </div>
@@ -34,7 +39,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-stone-700 hover:text-teal-600 font-medium transition-colors duration-200"
+                className="text-stone-700 hover:text-maroon-700 font-medium transition-colors duration-200"
               >
                 {item.name}
               </Link>
@@ -73,7 +78,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block text-stone-700 hover:text-teal-600 font-medium transition-colors duration-200"
+                className="block text-stone-700 hover:text-maroon-700 font-medium transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}

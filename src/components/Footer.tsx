@@ -19,12 +19,12 @@ export default function Footer() {
               <p>1512 Cleary Avenue</p>
               <p>Metairie, LA 70001</p>
               <p>
-                <a href="tel:5047825172" className="hover:text-white transition-colors">
+                <a href="tel:5047825172" className="hover:text-gold-400 transition-colors">
                   (504) 782-5172
                 </a>
               </p>
               <p>
-                <a href="mailto:larpsychiatry@gmail.com" className="hover:text-white transition-colors">
+                <a href="mailto:larpsychiatry@gmail.com" className="hover:text-gold-400 transition-colors">
                   larpsychiatry@gmail.com
                 </a>
               </p>
@@ -36,22 +36,22 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="hover:text-white transition-colors">
+                <Link href="/" className="hover:text-gold-400 transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-white transition-colors">
+                <Link href="/services" className="hover:text-gold-400 transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-white transition-colors">
+                <Link href="/about" className="hover:text-gold-400 transition-colors">
                   About Dr. Richard
                 </Link>
               </li>
               <li>
-                <a href="#schedule" className="hover:text-white transition-colors">
+                <a href="#schedule" className="hover:text-gold-400 transition-colors">
                   Schedule Appointment
                 </a>
               </li>
@@ -68,10 +68,10 @@ export default function Footer() {
               <li>DEA Registered</li>
             </ul>
             <div className="space-y-2 text-sm">
-              <Link href="/privacy-policy" className="block hover:text-white transition-colors">
+              <Link href="/privacy-policy" className="block hover:text-gold-400 transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="block hover:text-white transition-colors">
+              <Link href="/terms" className="block hover:text-gold-400 transition-colors">
                 Terms of Service
               </Link>
             </div>

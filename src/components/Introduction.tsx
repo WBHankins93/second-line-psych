@@ -16,7 +16,7 @@ export default function Introduction() {
           </p>
           <Link 
             href="/about"
-            className="inline-flex items-center text-teal-600 hover:text-teal-700 font-semibold transition-colors duration-200 group"
+            className="inline-flex items-center text-maroon-700 hover:text-maroon-800 font-semibold transition-colors duration-200 group"
           >
             Learn More About Dr. Richard
             <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">

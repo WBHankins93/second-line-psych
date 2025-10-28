@@ -26,7 +26,7 @@ export default function ScheduleSection() {
   }
 
   return (
-    <section id="schedule" className="py-20 bg-gradient-to-br from-teal-600 to-teal-700">
+    <section id="schedule" className="py-20 bg-gradient-to-br from-maroon-700 to-maroon-900">
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center">
           {/* Main Heading */}
@@ -34,7 +34,7 @@ export default function ScheduleSection() {
             Ready to Start Your Journey?
           </h2>
           
-          <p className="text-xl text-teal-50 mb-8">
+          <p className="text-xl text-stone-100 mb-8">
             Take the first step toward healing. Schedule your consultation today.
           </p>
 
@@ -42,21 +42,21 @@ export default function ScheduleSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <button
               onClick={openCalendly}
-              className="bg-white text-teal-600 hover:bg-teal-50 font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="bg-white text-maroon-700 hover:bg-stone-100 font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Schedule Consultation
             </button>
             <a
               href="/about"
-              className="bg-teal-800 hover:bg-teal-900 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300"
+              className="bg-gold-600 hover:bg-gold-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300"
             >
               Learn More First
             </a>
           </div>
 
           {/* HIPAA Disclaimer */}
-          <div className="mt-8 p-4 bg-teal-800/50 rounded-lg border border-teal-500/30">
-            <p className="text-sm text-teal-50 leading-relaxed">
+          <div className="mt-8 p-4 bg-maroon-800/50 rounded-lg border border-gold-500/30">
+            <p className="text-sm text-stone-100 leading-relaxed">
               <strong className="block mb-2">Privacy Notice:</strong>
               This is a request to schedule an appointment. Please provide only your name, 
               contact information, and preferred appointment time. 
@@ -69,14 +69,14 @@ export default function ScheduleSection() {
           </div>
 
           {/* Contact Alternative */}
-          <div className="mt-8 text-teal-50">
+          <div className="mt-8 text-stone-100">
             <p className="text-sm">
               Prefer to reach out directly?{' '}
-              <a href="mailto:larpsychiatry@gmail.com" className="underline hover:text-white transition-colors">
+              <a href="mailto:larpsychiatry@gmail.com" className="underline hover:text-gold-300 transition-colors">
                 Email us
               </a>
               {' '}or call{' '}
-              <a href="tel:5047825172" className="underline hover:text-white transition-colors">
+              <a href="tel:5047825172" className="underline hover:text-gold-300 transition-colors">
                 (504) 782-5172
               </a>
             </p>
