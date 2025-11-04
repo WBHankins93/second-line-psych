@@ -9,7 +9,6 @@ export const metadata = {
     const GOOGLE_CALENDAR_URL = "https://calendar.google.com/calendar/appointments/schedules/YOUR_SCHEDULE_ID"
   
     return (
-      <div className="min-h-screen bg-stone-50">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-maroon-700 to-maroon-900 py-12">
           <div className="section-container">
