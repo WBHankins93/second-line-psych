@@ -21,7 +21,7 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
-            <a href="#schedule" className="btn-primary">
+            <a href="/schedule" className="btn-primary">
               Schedule Your Consultation
             </a>
             <a href="/about" className="btn-secondary">

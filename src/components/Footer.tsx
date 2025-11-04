@@ -23,7 +23,6 @@ export default function Footer() {
               Compassionate mental health care rooted in resilience and community
             </p>
             <div className="space-y-2 text-sm">
-              <p>1512 Cleary Avenue</p>
               <p>Metairie, LA 70001</p>
               <p>
                 <a href="tel:5047825172" className="hover:text-gold-400 transition-colors">

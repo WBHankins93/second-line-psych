@@ -200,7 +200,7 @@ export default function AboutPage() {
               <p className="text-stone-100 text-lg mb-6">
                 Let's walk through this together.
               </p>
-              <a href="/#schedule" className="btn-primary bg-white text-maroon-700 hover:bg-stone-100">
+              <a href="/schedule" className="btn-primary bg-white text-maroon-700 hover:bg-stone-100">
                 Schedule Your Consultation
               </a>
             </div>

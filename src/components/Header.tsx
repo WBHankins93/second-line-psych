@@ -46,12 +46,12 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <a
-              href="#schedule"
+            <Link
+              href="/schedule"
               className="btn-primary"
             >
               Schedule Consultation
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -86,13 +86,13 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <a
-              href="#schedule"
+            <Link
+              href="/schedule"
               className="block btn-primary text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
               Schedule Consultation
-            </a>
+            </Link>
           </div>
         )}
       </nav>
