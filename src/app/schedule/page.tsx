@@ -1,14 +1,15 @@
 // src/app/schedule/page.tsx
 export const metadata = {
-    title: 'Schedule Consultation | Second Line Psychiatry',
-    description: 'Schedule your initial consultation with Dr. Lauryn Richard. Convenient telehealth appointments available.',
-  }
-  
-  export default function SchedulePage() {
-    // Replace this URL with your client's actual Google Calendar appointment scheduling URL
-    const GOOGLE_CALENDAR_URL = "https://calendar.google.com/calendar/appointments/schedules/YOUR_SCHEDULE_ID"
-  
-    return (
+  title: 'Schedule Consultation | Second Line Psychiatry',
+  description: 'Schedule your initial consultation with Dr. Lauryn Richard. Convenient telehealth appointments available.',
+}
+
+export default function SchedulePage() {
+  // Replace this URL with your client's actual Google Calendar appointment scheduling URL
+  const GOOGLE_CALENDAR_URL = "https://calendar.google.com/calendar/appointments/schedules/YOUR_SCHEDULE_ID"
+
+  return (
+    <div className="min-h-screen bg-stone-50">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-maroon-700 to-maroon-900 py-12">
           <div className="section-container">
@@ -102,7 +103,7 @@ export const metadata = {
                   Having trouble with the scheduler or prefer to reach out directly?
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  
+                  <a
                     href="tel:5047825172"
                     className="inline-flex items-center justify-center gap-2 text-maroon-700 hover:text-maroon-800 font-semibold transition-colors"
                   >
@@ -111,7 +112,7 @@ export const metadata = {
                     </svg>
                     (504) 782-5172
                   </a>
-                  
+                  <a
                     href="mailto:larpsychiatry@gmail.com"
                     className="inline-flex items-center justify-center gap-2 text-maroon-700 hover:text-maroon-800 font-semibold transition-colors"
                   >
@@ -159,5 +160,5 @@ export const metadata = {
           </div>
         </section>
       </div>
-    )
-  }
+  )
+}
