@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Services | Second Line Psychiatry',
+  title: 'Services',
   description: 'Comprehensive mental health services including medication management, therapy, and specialized treatment for ADHD, anxiety, mood disorders, and more.',
 }
 

@@ -1,30 +1,4 @@
-'use client'
-
-import { useEffect } from 'react'
-
 export default function ScheduleSection() {
-  useEffect(() => {
-    // Load Calendly widget script
-    const script = document.createElement('script')
-    script.src = 'https://assets.calendly.com/assets/external/widget.js'
-    script.async = true
-    document.body.appendChild(script)
-
-    return () => {
-      document.body.removeChild(script)
-    }
-  }, [])
-
-  const openCalendly = () => {
-    // @ts-ignore - Calendly is loaded via external script
-    if (window.Calendly) {
-      // @ts-ignore
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/your-calendly-url'
-      })
-    }
-  }
-
   return (
     <section id="schedule" className="py-20 bg-gradient-to-br from-maroon-700 to-maroon-900">
       <div className="section-container">
@@ -40,12 +14,12 @@ export default function ScheduleSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <button
-              onClick={openCalendly}
+            <a
+              href="/schedule"
               className="bg-white text-maroon-700 hover:bg-stone-100 font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Schedule Consultation
-            </button>
+            </a>
             <a
               href="/about"
               className="bg-gold-600 hover:bg-gold-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300"

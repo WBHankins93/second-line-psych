@@ -1,12 +1,14 @@
 // src/app/schedule/page.tsx
 export const metadata = {
-  title: 'Schedule Consultation | Second Line Psychiatry',
+  title: 'Schedule Consultation',
   description: 'Schedule your initial consultation with Dr. Lauryn Richard. Convenient telehealth appointments available.',
 }
 
 export default function SchedulePage() {
-  // Replace this URL with your client's actual Google Calendar appointment scheduling URL
-  const GOOGLE_CALENDAR_URL = "https://calendar.google.com/calendar/appointments/schedules/YOUR_SCHEDULE_ID"
+  const googleCalendarUrl =
+    process.env.NEXT_PUBLIC_GOOGLE_APPOINTMENT_URL ||
+    'https://calendar.google.com/calendar/appointments/schedules/YOUR_SCHEDULE_ID'
+  const schedulerConfigured = !googleCalendarUrl.includes('YOUR_SCHEDULE_ID')
 
   return (
     <div className="min-h-screen bg-stone-50">
@@ -85,16 +87,26 @@ export default function SchedulePage() {
   
               {/* Embedded Google Calendar */}
               <div className="bg-white rounded-xl shadow-lg p-6 border border-stone-200">
-                <iframe
-                  src={GOOGLE_CALENDAR_URL}
-                  style={{ border: 0 }}
-                  width="100%"
-                  height="700"
-                  frameBorder="0"
-                  scrolling="no"
-                  title="Schedule Appointment"
-                  className="rounded-lg"
-                />
+                {schedulerConfigured ? (
+                  <iframe
+                    src={googleCalendarUrl}
+                    style={{ border: 0 }}
+                    width="100%"
+                    height="700"
+                    frameBorder="0"
+                    scrolling="no"
+                    title="Schedule Appointment"
+                    className="rounded-lg"
+                  />
+                ) : (
+                  <div className="rounded-lg border border-amber-200 bg-amber-50 p-6 text-center">
+                    <p className="font-semibold text-amber-900 mb-2">Scheduling widget setup in progress</p>
+                    <p className="text-amber-800 text-sm">
+                      Please call <a href="tel:5047825172" className="underline">(504) 782-5172</a> or email{' '}
+                      <a href="mailto:larpsychiatry@gmail.com" className="underline">larpsychiatry@gmail.com</a> to book your consultation.
+                    </p>
+                  </div>
+                )}
               </div>
   
               {/* Alternative Contact Methods */}

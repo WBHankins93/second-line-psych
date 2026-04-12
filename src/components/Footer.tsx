@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <div className="flex items-baseline space-x-2">
                 {/* "Second Line" in thin, sleek sans-serif */}
-                <span className="text-2xl font-sans font-light tracking-wide text-white-900">
+                <span className="text-2xl font-sans font-light tracking-wide text-white">
                   Second Line
                 </span>
                 {/* "Psychiatry" in larger Eutemia font */}
@@ -57,9 +57,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#schedule" className="hover:text-gold-400 transition-colors">
+                <Link href="/schedule" className="hover:text-gold-400 transition-colors">
                   Schedule Appointment
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

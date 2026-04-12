@@ -1,7 +1,5 @@
-import Image from 'next/image'
-
 export const metadata = {
-  title: 'About Dr. Lauryn Richard | Second Line Psychiatry',
+  title: 'About Dr. Lauryn Richard',
   description: 'Learn about Dr. Lauryn Richard, DNP, APRN, PMHNP-BC - Board-certified psychiatric nurse practitioner with 7 years of experience in mental health care.',
 }
 
