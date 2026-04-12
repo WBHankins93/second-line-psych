@@ -56,7 +56,7 @@ second-line-psychiatry/
 │       ├── Introduction.tsx      # Brief intro
 │       ├── Specialties.tsx       # Specialties cards
 │       ├── TrustSection.tsx      # Credentials
-│       ├── ScheduleSection.tsx   # Calendly integration
+│       ├── ScheduleSection.tsx   # Homepage schedule CTA
 │       └── Footer.tsx            # Footer
 ├── public/                       # Static assets
 ├── tailwind.config.ts            # Tailwind configuration
@@ -72,21 +72,20 @@ second-line-psychiatry/
 - ✅ SEO optimized
 - ✅ Accessible (WCAG compliant)
 - ✅ Fast page loads
-- ✅ Calendly integration for scheduling
+- ✅ Dedicated scheduling page with Google Appointments embed
 - ✅ HIPAA-compliant disclaimers
 
 ## 📝 Customization Needed
 
-### 1. Calendly URL
+### 1. Scheduling URL
 
-Update the Calendly URL in `src/components/ScheduleSection.tsx`:
+Set your booking link with an environment variable:
 
-```typescript
-// Line 17-20
-window.Calendly.initPopupWidget({
-  url: 'https://calendly.com/YOUR-CALENDLY-USERNAME'
-})
+```bash
+NEXT_PUBLIC_GOOGLE_APPOINTMENT_URL=https://calendar.google.com/calendar/appointments/schedules/YOUR_REAL_SCHEDULE_ID
 ```
+
+The schedule page (`src/app/schedule/page.tsx`) will show a fallback contact card when this value is not configured.
 
 ### 2. Images
 
@@ -156,14 +155,13 @@ Verify all contact information is correct in:
 
 ## 🔧 Environment Variables
 
-No environment variables are required for the basic setup. If you add features that require API keys or secrets:
+Use a `.env.local` file:
 
-1. Create `.env.local` file:
-   ```
-   NEXT_PUBLIC_YOUR_VAR=value
-   ```
+```
+NEXT_PUBLIC_GOOGLE_APPOINTMENT_URL=https://calendar.google.com/calendar/appointments/schedules/YOUR_REAL_SCHEDULE_ID
+```
 
-2. Add to Vercel via dashboard or CLI
+Add the same variable in Vercel Project Settings → Environment Variables.
 
 ## 📱 Pages Overview
 
@@ -172,7 +170,7 @@ No environment variables are required for the basic setup. If you add features t
 - Brief introduction
 - Specialties overview
 - Trust indicators
-- Schedule section with Calendly
+- Schedule section that routes to the booking page
 
 ### About (`/about`)
 - Full bio of Dr. Richard
@@ -198,7 +196,7 @@ No environment variables are required for the basic setup. If you add features t
 
 ## 🎯 HIPAA Compliance Notes
 
-**Important:** The Calendly free tier is NOT HIPAA compliant. Current implementation:
+**Important:** Any scheduler used must be HIPAA-compliant and covered by a BAA. Current implementation:
 
 1. ✅ Disclaimers added to scheduling section
 2. ✅ Instructions not to include health information
@@ -242,7 +240,7 @@ The site is optimized for performance with:
 
 ## 🔐 Security Checklist
 
-- [ ] Update Calendly URL
+- [ ] Set `NEXT_PUBLIC_GOOGLE_APPOINTMENT_URL`
 - [ ] Review HIPAA disclaimers
 - [ ] Add SSL certificate (automatic with Vercel)
 - [ ] Test all forms

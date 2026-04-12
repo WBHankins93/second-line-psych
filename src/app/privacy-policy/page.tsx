@@ -1,7 +1,9 @@
 export const metadata = {
-  title: 'Privacy Policy | Second Line Psychiatry',
+  title: 'Privacy Policy',
   description: 'Our commitment to protecting your privacy and health information in compliance with HIPAA regulations.',
 }
+
+const LAST_UPDATED = 'April 11, 2026'
 
 export default function PrivacyPolicyPage() {
   return (
@@ -12,7 +14,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="text-sm text-stone-600 mb-8">
-            Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+            Last Updated: {LAST_UPDATED}
           </p>
 
           <div className="prose prose-stone max-w-none space-y-6 text-stone-700">
