@@ -101,6 +101,32 @@ export default function AboutPage() {
                 <div className="space-y-6">
                   <div className="border-l-4 border-maroon-700 pl-6">
                     <h3 className="text-xl font-semibold text-stone-800 mb-2">
+                      Owner & Psychiatric Nurse Practitioner
+                    </h3>
+                    <p className="text-stone-600 mb-2">
+                      Second Line Psychiatry | 2024 - Present
+                    </p>
+                    <ul className="list-disc list-inside space-y-1 text-stone-700">
+                      <li>Providing telehealth psychiatric services for children, adolescents, and young adults across Louisiana</li>
+                      <li>Comprehensive evaluations, medication management, and evidence-based therapy</li>
+                    </ul>
+                  </div>
+
+                  <div className="border-l-4 border-maroon-700 pl-6">
+                    <h3 className="text-xl font-semibold text-stone-800 mb-2">
+                      Mental Health Nursing Instructor
+                    </h3>
+                    <p className="text-stone-600 mb-2">
+                      LSU Health New Orleans School of Nursing | Current
+                    </p>
+                    <ul className="list-disc list-inside space-y-1 text-stone-700">
+                      <li>Teaching mental health nursing coursework and clinical rotations</li>
+                      <li>Training the next generation of psychiatric nursing professionals</li>
+                    </ul>
+                  </div>
+
+                  <div className="border-l-4 border-maroon-700 pl-6">
+                    <h3 className="text-xl font-semibold text-stone-800 mb-2">
                       Emergency Dept. Psychiatric Consultant
                     </h3>
                     <p className="text-stone-600 mb-2">
@@ -184,7 +210,7 @@ export default function AboutPage() {
                   </div>
                   <div className="bg-stone-50 p-4 rounded-lg">
                     <h3 className="font-semibold text-stone-800">Louisiana Board of Pharmacy CDS</h3>
-                    <p className="text-sm text-stone-600">Feb 2025 - Feb 2026</p>
+                    <p className="text-sm text-stone-600">Mar 2026 - Mar 2027</p>
                   </div>
                 </div>
               </div>

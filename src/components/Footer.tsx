@@ -24,14 +24,15 @@ export default function Footer() {
             </p>
             <div className="space-y-2 text-sm">
               <p>Metairie, LA 70001</p>
+              <p>By Appointment Only</p>
               <p>
                 <a href="tel:5047825172" className="hover:text-gold-400 transition-colors">
                   (504) 782-5172
                 </a>
               </p>
               <p>
-                <a href="mailto:larpsychiatry@gmail.com" className="hover:text-gold-400 transition-colors">
-                  larpsychiatry@gmail.com
+                <a href="mailto:larichar22@gmail.com" className="hover:text-gold-400 transition-colors">
+                  larichar22@gmail.com
                 </a>
               </p>
             </div>

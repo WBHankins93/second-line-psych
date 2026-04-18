@@ -133,10 +133,9 @@ export default function PrivacyPolicyPage() {
               </p>
               <div className="mt-3 ml-4">
                 <p>Second Line Psychiatry</p>
-                <p>1512 Cleary Avenue</p>
                 <p>Metairie, LA 70001</p>
                 <p>Phone: <a href="tel:5047825172" className="text-maroon-700 hover:underline">(504) 782-5172</a></p>
-                <p>Email: <a href="mailto:larpsychiatry@gmail.com" className="text-maroon-700 hover:underline">larpsychiatry@gmail.com</a></p>
+                <p>Email: <a href="mailto:larichar22@gmail.com" className="text-maroon-700 hover:underline">larichar22@gmail.com</a></p>
               </div>
             </section>
 

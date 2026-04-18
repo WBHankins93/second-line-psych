@@ -1,16 +1,40 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable React strict mode for development
   reactStrictMode: true,
-  
-  // Image optimization
+
   images: {
-    domains: [], // Add domains for external images here
-    formats: ['image/webp'],
+    formats: ['image/avif', 'image/webp'],
   },
-  
-  // Enable SWC minification
-  swcMinify: true,
+
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on',
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(self), microphone=(self), geolocation=()',
+          },
+        ],
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig

@@ -46,7 +46,7 @@ export default function ScheduleSection() {
           <div className="mt-8 text-stone-100">
             <p className="text-sm">
               Prefer to reach out directly?{' '}
-              <a href="mailto:larpsychiatry@gmail.com" className="underline hover:text-gold-300 transition-colors">
+              <a href="mailto:larichar22@gmail.com" className="underline hover:text-gold-300 transition-colors">
                 Email us
               </a>
               {' '}or call{' '}
